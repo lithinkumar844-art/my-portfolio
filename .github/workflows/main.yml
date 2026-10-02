@@ -24,11 +24,14 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: Portfolio-main/package-lock.json
 
       - name: Install dependencies
+        working-directory: Portfolio-main
         run: npm install
 
-      - name: Build
+      - name: Build portfolio
+        working-directory: Portfolio-main
         run: npm run build
 
       - name: Setup GitHub Pages
@@ -37,7 +40,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: Portfolio-main/dist
 
       - name: Deploy
         uses: actions/deploy-pages@v4
