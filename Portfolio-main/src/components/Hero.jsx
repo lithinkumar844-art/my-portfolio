@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
   instead of the procedural fallback animation.
 */
 const FRAME_COUNT = 200;
-const frameSrc = (index) => `/hero_frames_200_SORTED/hero_frames_200/${(index + 1).toString().padStart(3, "0")}.jpg`;
+const frameSrc = (index) => `${import.meta.env.BASE_URL}hero_frames_200_SORTED/hero_frames_200/${(index + 1).toString().padStart(3, "0")}.jpg`;
 
 export default function Hero() {
   const canvasRef = useRef(null);
