@@ -1,70 +1,134 @@
-# Shivratna Kumavat — Portfolio
+# Lithinkumar P — Portfolio
 
-A dark, glassmorphism-style portfolio built with React 19 + Vite + Tailwind CSS v4 + GSAP
-(ScrollTrigger), in the same visual language as the reference project
-(leeshark21/modern-portfolio): black background, glowing blue/purple/pink accents,
-scroll-driven animation.
+A modern, interactive personal portfolio built with **React + Vite + Tailwind CSS**, featuring a dark, glassmorphism-inspired design, smooth animations, and a responsive user experience.
 
-## Getting started
+The portfolio showcases my journey as a **B.Tech Artificial Intelligence & Data Science student**, along with my projects, technical skills, leadership experience, certifications, and professional interests.
 
-```bash
-npm install
-npm run dev
-```
+## About Me
 
-Then open the printed local URL (usually http://localhost:5173).
+I'm **Lithinkumar P**, a 3rd-year **B.Tech Artificial Intelligence & Data Science student** at **Kangeyam Institute of Technology**.
 
-To build for production:
+I'm interested in **Data Analytics, Software Development, Cloud Computing, Generative AI, and modern digital technologies**.
 
-```bash
-npm run build
-npm run preview
-```
+I also actively contribute to student communities and technical initiatives through:
 
-## Structure
+* Vice President — AI & Data Science
+* IEEE Day 2026 Ambassador
+* IEEE Student Branch Official Social Media Handler
+* GDG Member
+* Google Cloud & NVIDIA Community Member
 
-```
+## Tech Stack
+
+* **Languages:** Java, Python, SQL
+* **Data & AI:** Data Analytics, Generative AI, RAG, AI Agents
+* **Web:** HTML, CSS, JavaScript, React
+* **Cloud:** Google Cloud, AWS
+* **Tools:** Git, GitHub, VS Code
+* **Other:** UI/UX, Prompt Engineering
+
+## Portfolio Sections
+
+The website includes:
+
+```text
 src/
   components/
-    Navbar.jsx      -- fixed glass navbar
-    Hero.jsx         -- scroll-scrubbed hero (see below)
-    About.jsx        -- summary + key stats
-    Expertise.jsx     -- pinned 3D card stack of skill categories
-    Experience.jsx    -- work + education timeline
-    Works.jsx          -- project grid (Movie Agent, Voice Assistant, Ambulance Detection)
-    Contact.jsx        -- contact info + form (see below)
+    Navbar.jsx
+    Hero.jsx
+    About.jsx
+    Skills.jsx
+    Experience.jsx
+    Projects.jsx
+    Certifications.jsx
+    Contact.jsx
     Footer.jsx
   App.jsx
   index.css
 ```
 
-## Adding your own scroll image sequence to the Hero
+### Featured Sections
 
-The original reference project scrubs through 240 frames of custom footage as
-you scroll. This project ships with the same mechanism, but falls back to a
-procedural animated gradient until you provide real frames (so it looks
-intentional either way).
+* **Hero** — Introduction and personal branding
+* **About** — Academic background and profile
+* **Skills** — Technical skills and technologies
+* **Experience** — Leadership, internships, and activities
+* **Projects** — Selected academic and personal projects
+* **Certifications** — Professional certifications and achievements
+* **Contact** — Ways to connect with me
 
-To use your own sequence:
+## Featured Projects
 
-1. Export frames from a video/animation (e.g. `ffmpeg -i input.mp4 -vf fps=24 frame-%03d.jpg`).
-2. Name them `frame-001.jpg`, `frame-002.jpg`, ... sequentially.
-3. Put them in `public/frameimage/`.
-4. Open `src/components/Hero.jsx` and set `FRAME_COUNT` to your total frame count.
+### NEERX
 
-The component automatically detects real frames and switches out of fallback mode.
+An autonomous floating river-cleaning and water-quality monitoring robot designed to collect floating waste while monitoring water parameters.
 
-## Wiring up the contact form
+### Dynamic RAG Chatbot
 
-`Contact.jsx` currently just shows a local "sent" confirmation on submit. To
-actually receive messages, connect it to a form backend, for example:
+A Retrieval-Augmented Generation chatbot built using modern LLM, vector database, and Streamlit technologies.
 
-- [Formspree](https://formspree.io) — point the `onSubmit` handler's fetch at your form endpoint.
-- [EmailJS](https://www.emailjs.com) — send straight from the client.
-- Your own API route, if you add a backend.
+### CivicPulse
 
-## Things to personalize
+A technology-driven project focused on improving civic engagement and digital interaction.
 
-- Replace the `#` hrefs in `Contact.jsx` with your real LinkedIn and GitHub URLs.
-- Swap the favicon at `public/favicon.svg`.
-- Update `index.html` meta tags (title/description) if needed.
+### AML Shield X
+
+A project focused on detecting and addressing suspicious financial activities using data-driven approaches.
+
+## Getting Started
+
+Clone the repository and install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL displayed in the terminal.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Customization
+
+To personalize the portfolio, update:
+
+* Personal information
+* Profile image
+* Projects
+* Skills
+* Certifications
+* Leadership experience
+* Social media links
+* Contact information
+* Favicon and website metadata
+
+## Connect With Me
+
+**LinkedIn:**
+https://www.linkedin.com/in/lithinkumar-p
+
+**GitHub:**
+https://github.com/lithinkumar844-art
+
+---
+
+### Built With
+
+**React • Vite • Tailwind CSS • JavaScript • GSAP**
+
+> Designed and developed by **Lithinkumar P**
